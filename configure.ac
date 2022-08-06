@@ -1,4 +1,4 @@
-AC_INIT([gqlplus], [1.14])
+AC_INIT([gqlplus], [1.15])
 AC_CONFIG_SRCDIR([gqlplus.c])
 AM_INIT_AUTOMAKE
 AC_PROG_CC

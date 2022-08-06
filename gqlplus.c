@@ -448,6 +448,7 @@ Copyright (C) 2004 Ljubomir J. Buturovic. All Rights Reserved.
 #include <fcntl.h>
 #include <termios.h>
 #include <sys/wait.h>
+#include <sys/time.h>
 #include <errno.h>
 #include <sys/stat.h>
 #include <readline/readline.h>
@@ -2979,8 +2980,7 @@ int main(int argc, char **argv)
                       system("clear");
                     else if (!check_numeric_prompt(prompt) && (shellcmd = get_shellcmd(oline)))
                     {
-                      system(shellcmd);
-                      fprintf(stdout, "\n");
+                      fprintf(stdout, "escape to shell is forbidden.\n");
                       fflush(stdout);
                     }else {
                       if (check_password_prompt(prompt)){
